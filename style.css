@@ -1,0 +1,47 @@
+:root{--bg:#fbfbfd;--fg:#1d1d1f;--muted:#6e6e73;--line:#e3e3e8;--card:#fff;--accent:#e8204f;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b0d;--fg:#f5f5f7;--muted:#a1a1a6;--line:#2a2a2e;--card:#161618;--accent:#ff3b66;color-scheme:dark}}
+*{box-sizing:border-box}
+html [lang]:not(html){display:none}
+html[data-lang=en] [lang=en]:not(html),html[data-lang=ru] [lang=ru]:not(html),html[data-lang=es] [lang=es]:not(html),html[data-lang=tg] [lang=tg]:not(html){display:revert}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand img{border-radius:7px}
+.langs{display:flex;gap:2px;background:var(--line);padding:2px;border-radius:9px}
+.langs button{all:unset;cursor:pointer;font-size:12px;font-weight:600;padding:4px 9px;border-radius:7px;color:var(--muted)}
+.langs button[aria-pressed=true]{background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.nav{display:flex;gap:20px;padding-block:0 10px;overflow-x:auto;font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
+.nav a[aria-current]{color:var(--fg);font-weight:600}
+main{padding-block:40px 64px}
+h1{font-size:40px;line-height:1.1;letter-spacing:-.025em;margin:0 0 10px;text-wrap:balance}
+h2{font-size:26px;letter-spacing:-.015em;margin:48px 0 8px}
+h3{font-size:18px;margin:26px 0 4px}
+p{margin:0 0 10px}
+.muted{color:var(--muted);font-size:15px}
+.doc p{color:var(--muted)}
+.toc{padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+.toc a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--fg);font-size:14px}
+a{color:var(--accent)}
+.hero{text-align:center;padding-block:32px 16px}
+.appicon{border-radius:28px;box-shadow:0 20px 50px -18px rgba(232,32,79,.55)}
+.big{font-size:64px;margin-top:22px}
+.tag{font-size:26px;font-weight:600;letter-spacing:-.01em;margin-bottom:14px;text-wrap:balance}
+.lead{font-size:19px;color:var(--muted);max-width:600px;margin-inline:auto}
+.pill{display:inline-block;margin-top:22px;padding:9px 18px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:600;font-size:15px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:48px}
+.links a{display:block;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:16px;color:var(--fg);text-decoration:none;font-weight:600}
+.links a::after{content:" ›";color:var(--muted)}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:24px 0 8px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.mail a{font-size:20px;font-weight:600;text-decoration:none;word-break:break-all}
+.mail button{margin-left:auto;font:inherit;font-size:14px;font-weight:600;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+.mail .c2,.mail button.ok .c1{display:none!important}
+.mail button.ok .c2{display:inline!important}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin-top:8px}
+.foot{display:flex;flex-wrap:wrap;gap:8px 20px;padding-block:24px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.foot a{color:var(--muted)}
+@media (max-width:520px){h1{font-size:32px}.big{font-size:52px}.tag{font-size:22px}}

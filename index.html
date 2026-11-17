@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shakl · Shakl</title>
+<meta name="description" content="Shakl builds a training plan for your goal, your equipment and your time, guides every workout and adapts as you get stronger. Your data stays on your iPhone.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+<a class="brand" href="index.html"><img src="icon.png" alt="" width="28" height="28"><span>Shakl</span></a>
+<div class="langs" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="ru">RU</button><button data-l="es">ES</button><button data-l="tg">TJ</button></div>
+</div><nav class="wrap nav"><a href="index.html" aria-current=page><span lang="en">Home</span><span lang="ru">Главная</span><span lang="es">Inicio</span><span lang="tg">Асосӣ</span></a><a href="privacy.html"><span lang="en">Privacy policy</span><span lang="ru">Политика конфиденциальности</span><span lang="es">Política de privacidad</span><span lang="tg">Сиёсати махфият</span></a><a href="terms.html"><span lang="en">Terms</span><span lang="ru">Условия</span><span lang="es">Términos</span><span lang="tg">Шартҳо</span></a><a href="support.html"><span lang="en">Support</span><span lang="ru">Поддержка</span><span lang="es">Soporte</span><span lang="tg">Дастгирӣ</span></a></nav></header>
+<main class="wrap"><section class="hero"><img class="appicon" src="icon.png" alt="Shakl" width="128" height="128">
+<h1 class="big">Shakl</h1><p class="tag"><span lang="en">Your workout plan, built around you.</span><span lang="ru">План тренировок, собранный под тебя.</span><span lang="es">Tu plan de entrenamiento, hecho a tu medida.</span><span lang="tg">Нақшаи машқ, ки барои ту сохта шудааст.</span></p><p class="lead"><span lang="en">Shakl builds a training plan for your goal, your equipment and your time, guides every workout and adapts as you get stronger. Your data stays on your iPhone.</span><span lang="ru">Shakl составляет план под твою цель, снаряжение и время, ведёт каждую тренировку и подстраивается, когда ты становишься сильнее. Твои данные остаются на твоём iPhone.</span><span lang="es">Shakl crea un plan para tu objetivo, tu equipo y tu tiempo, te guía en cada entrenamiento y se adapta a medida que te haces más fuerte. Tus datos se quedan en tu iPhone.</span><span lang="tg">Shakl барои ҳадаф, таҷҳизот ва вақти ту нақша месозад, дар ҳар машқ роҳнамоӣ мекунад ва вақте ту қавитар мешавӣ, худро мутобиқ мекунад. Маълумоти ту дар iPhone-и худат мемонад.</span></p>
+<p class="pill"><span lang="en">Coming soon to the App Store</span><span lang="ru">Скоро в App Store</span><span lang="es">Pronto en el App Store</span><span lang="tg">Ба наздикӣ дар App Store</span></p></section>
+<section class="links"><a href="support.html"><span lang="en">Support</span><span lang="ru">Поддержка</span><span lang="es">Soporte</span><span lang="tg">Дастгирӣ</span></a><a href="privacy.html"><span lang="en">Privacy policy</span><span lang="ru">Политика конфиденциальности</span><span lang="es">Política de privacidad</span><span lang="tg">Сиёсати махфият</span></a><a href="terms.html"><span lang="en">Terms of use</span><span lang="ru">Условия использования</span><span lang="es">Condiciones de uso</span><span lang="tg">Шартҳои истифода</span></a></section></main>
+<footer class="wrap foot"><span>© 2026 Shakl</span><span><span lang="en">Made in Dushanbe</span><span lang="ru">Сделано в Душанбе</span><span lang="es">Hecho en Dusambé</span><span lang="tg">Дар Душанбе сохта шудааст</span></span><a href="mailto:shaklsupport@gmail.com">shaklsupport@gmail.com</a></footer>
+<script>
+(function(){var r=document.documentElement,ok=["en","ru","es","tg"];
+function set(l){if(ok.indexOf(l)<0)l="en";r.dataset.lang=l;r.lang=l;try{localStorage.setItem("lang",l)}catch(e){}
+document.querySelectorAll(".langs button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)})}
+var q=new URLSearchParams(location.search).get("lang"),s=null;try{s=localStorage.getItem("lang")}catch(e){}
+var n=(navigator.language||"en").slice(0,2);set(q||s||(n==="tg"?"tg":n==="ru"?"ru":n==="es"?"es":"en"));
+document.querySelectorAll(".langs button").forEach(function(b){b.onclick=function(){set(b.dataset.l)}});
+var c=document.getElementById("copy");if(c)c.onclick=function(){var done=function(){c.classList.add("ok");setTimeout(function(){c.classList.remove("ok")},1600)};
+if(navigator.clipboard)navigator.clipboard.writeText("shaklsupport@gmail.com").then(done,function(){})};})();
+</script>
+</body>
+</html>
